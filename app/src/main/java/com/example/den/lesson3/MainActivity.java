@@ -19,7 +19,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends Activity implements AdapterView.OnItemSelectedListener {
+public class MainActivity extends Activity {
     // ************** Spinner **************
 
 
@@ -41,25 +41,26 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
 //    }
 
 
-    public void onItemSelected(AdapterView<?> parent, View view,
-                               int pos, long id) {
-        Resources res = getResources();
-        CharSequence[] items = res.getTextArray(R.array.car_types);
+//    public void onItemSelected(AdapterView<?> parent, View view,
+//                               int pos, long id) {
+//        Resources res = getResources();
+//        CharSequence[] items = res.getTextArray(R.array.car_types);
+//
+//        Toast toast = Toast.makeText(this, items[pos], Toast.LENGTH_SHORT);
+//        toast.show();
+//    }
 
-        Toast toast = Toast.makeText(this, items[pos], Toast.LENGTH_SHORT);
-        toast.show();
-    }
-
-    public void onNothingSelected(AdapterView<?> parent) {
-        int i = 0;
-    }
-
-    // ************** List View **************
-
+//    public void onNothingSelected(AdapterView<?> parent) {
+//        int i = 0;
+//    }
+//
+//    // ************** List View **************
+//
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
 //        setContentView(R.layout.layout_streets);
+//
 //        ListView listView = (ListView) findViewById(R.id.listView);
 //
 //        Resources res = getResources();
@@ -88,7 +89,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
 //        });
 //    }
 
-    // ************** Grid View **************
+  //   ************** Grid View **************
 
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
@@ -134,7 +135,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
 //        });
 //    }
 
-
+//
     // ************** Grid View Custom View & View Holder **************
 
     @Override
@@ -207,8 +208,4 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
             }
         });
     }
-
-    // ************** Grid View with Cars **************
-
-    // Get cars drawables
 }
